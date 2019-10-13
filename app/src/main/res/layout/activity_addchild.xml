@@ -53,10 +53,10 @@
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/addbloodgroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addname"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintVertical_bias="0.538" />
 
     <EditText
         android:id="@+id/addbloodgroup"

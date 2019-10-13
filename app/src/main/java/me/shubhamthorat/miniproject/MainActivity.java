@@ -2,9 +2,11 @@ package me.shubhamthorat.miniproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 
@@ -73,10 +75,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+
         try {
             final GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             // Create a new user with a first and last name
-
+            SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor edit = pref.edit();
+            edit.putString("user_id",account.getId());
+            edit.commit();
             DocumentReference docRef = db.collection("users").document(account.getId());
             docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                 @Override
