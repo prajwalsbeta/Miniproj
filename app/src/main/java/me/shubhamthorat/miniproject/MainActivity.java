@@ -95,8 +95,9 @@ public class MainActivity extends AppCompatActivity {
                             Map<String, Object> user = new HashMap<>();
                             user.put("email", account.getEmail());
                             user.put("username", account.getDisplayName());
-//                            user.put("photo_url", account.getPhotoUrl());
+                            user.put("photo_url", account.getPhotoUrl());
                             user.put("id", account.getId());
+                            user.put("pincode","411014");
 
                             db.collection("users").document(account.getId())
                                     .set(user)

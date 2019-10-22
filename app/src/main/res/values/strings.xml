@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MiniProject</string>
+    <string name="app_name">eVaccine</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -21,4 +21,18 @@
     <string name="addgender">Gender</string>
     <string name="addbutton">ADD</string>
     <string name="Status">Status</string>
+    <string name="p_HPV">Some Cancers Warts</string>
+    <string name="p_Tdpa">Diphther, Tetanus  Pertussis</string>
+    <string name="p_Vec">Chicken pox</string>
+    <string name="p_mmr">Measles,Mumps,Rubella</string>
+    <string name="p_Typhoid">Typhoid,Fever, Diarrhea</string>
+    <string name="p_Hepb">Hepatitis B</string>
+    <string name="p_Polio">Polio</string>
+    <string name="p_Dtp">Diphtheria,Tetanus</string>
+    <string name="p_Hib">Bacteria Infection</string>
+    <string name="p_PVC">Pneumonia</string>
+    <string name="p_RV">Diarrhea</string>
+    <string name="p_HepA">Liver disease</string>
+
+
 </resources>

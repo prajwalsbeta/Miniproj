@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chart"></activity>
-        <activity android:name=".Selectchild" />
-        <activity android:name=".Addchild" />
-        <activity android:name=".Profile" />
+        <activity android:name=".chart"
+            android:parentActivityName=".Selectchild"></activity>
+        <activity android:name=".Selectchild"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Addchild"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Profile"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".navigation"
             android:label="@string/title_activity_navigation"
@@ -24,6 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
