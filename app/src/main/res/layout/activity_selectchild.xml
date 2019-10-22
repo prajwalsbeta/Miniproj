@@ -8,35 +8,28 @@
     tools:context=".Selectchild">
 
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="223dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Select Child"
-        android:textColor="#292323"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="223dp"-->
+<!--        android:layout_height="78dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="Select Child"-->
+<!--        android:textColor="#292323"-->
+<!--        android:textSize="36sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.552"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
-    <ListView
-        android:id="@+id/listviewselect"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:divider="#889"
-        android:dividerHeight="1dp"
-        android:listSelector="#a02a2a2a"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"></ListView>
+        android:layout_height="match_parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
