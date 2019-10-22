@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-        <ListView
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".chartActivity">
+
+        <TextView
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listview"
-            android:divider="#889"
-            android:dividerHeight="1dp"
-            android:listSelector="#a02a2a2a"
-            ></ListView>
+            android:gravity="center|center_horizontal"
+            android:text="Vaccination Schedule"
+            android:textSize="25sp"
+            android:fontFamily="casual" />
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     </LinearLayout>

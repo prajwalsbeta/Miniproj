@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chart"
+        <activity android:name=".chartActivity"
             android:parentActivityName=".Selectchild"></activity>
         <activity android:name=".Selectchild"
             android:parentActivityName=".MainActivity"/>

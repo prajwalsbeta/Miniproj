@@ -45,6 +45,9 @@ public class ChildAdapter extends FirestoreRecyclerAdapter<Child, ChildAdapter.C
                 @Override
                 public void onClick(View v) {
                     int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION && listener != null) {
+                        listener.onItemClick(getSnapshots().getSnapshot(position), position);
+                    }
 
                 }
             });
