@@ -100,8 +100,8 @@ public class Addchild extends AppCompatActivity {
                 name = addname.getText().toString();
                 dob = adddob.getText().toString();
                 bloodgroup = addbloodgroup.getText().toString();
-                phone = addphone.getText().toString();
-                gender = radioButton.getText().toString();
+                gender = addphone.getText().toString();
+                phone = radioButton.getText().toString();
 
 
                 DocumentReference docRef = db.collection("users").document(user_id).collection("Children").document(name);
